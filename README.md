@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Checkout source code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
 
     - name: Generate deployment package
       run: zip -r deploy.zip . -x '*.git*'
